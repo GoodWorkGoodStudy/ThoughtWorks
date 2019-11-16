@@ -14,7 +14,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
 }
 
+
+//MARK: - ♻️life cycle
+
+//MARK: - 🔄overwrite
+
+//MARK: - 🚪public
+
+//MARK: - 🍐delegate
+
+//MARK: - ☎️notification
+
+//MARK: - 🎬event response
+
+//MARK: - 🔒private
+
+//MARK: - 🌲setupUI
+
+//MARK: - ☸getter and setter

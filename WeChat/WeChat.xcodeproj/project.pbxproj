@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20BA78C123803B5F00356FF5 /* LibraryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78C023803B5F00356FF5 /* LibraryTest.swift */; };
+		20BA78C523803B9800356FF5 /* ToolsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78C423803B9800356FF5 /* ToolsTest.swift */; };
+		20BA78CA23803C1500356FF5 /* NTBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78C923803C1500356FF5 /* NTBaseTabBarController.swift */; };
+		20BA78CC23803C4200356FF5 /* NTModulesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78CB23803C4200356FF5 /* NTModulesTest.swift */; };
+		20BA78CE23803D5500356FF5 /* NTBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78CD23803D5500356FF5 /* NTBaseNavigationController.swift */; };
+		20BA78D023803D7700356FF5 /* NTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78CF23803D7700356FF5 /* NTBaseViewController.swift */; };
+		20BA78D7238044A400356FF5 /* NTCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78D6238044A400356FF5 /* NTCircleVC.swift */; };
+		20BA78D9238044B600356FF5 /* NTUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78D8238044B600356FF5 /* NTUserVC.swift */; };
+		20BA78DC2380466A00356FF5 /* NTGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78DB2380466A00356FF5 /* NTGlobal.swift */; };
+		20BA78E02380486100356FF5 /* NTHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78DF2380486100356FF5 /* NTHomeVC.swift */; };
+		20BA78E22380488D00356FF5 /* NTHomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78E12380488D00356FF5 /* NTHomeListCell.swift */; };
 		20F2DF38237FFDA100AD8558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2DF37237FFDA100AD8558 /* AppDelegate.swift */; };
 		20F2DF3A237FFDA100AD8558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2DF39237FFDA100AD8558 /* ViewController.swift */; };
 		20F2DF3D237FFDA100AD8558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F2DF3B237FFDA100AD8558 /* Main.storyboard */; };
@@ -35,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20BA78C023803B5F00356FF5 /* LibraryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTest.swift; sourceTree = "<group>"; };
+		20BA78C423803B9800356FF5 /* ToolsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsTest.swift; sourceTree = "<group>"; };
+		20BA78C923803C1500356FF5 /* NTBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTBaseTabBarController.swift; sourceTree = "<group>"; };
+		20BA78CB23803C4200356FF5 /* NTModulesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTModulesTest.swift; sourceTree = "<group>"; };
+		20BA78CD23803D5500356FF5 /* NTBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTBaseNavigationController.swift; sourceTree = "<group>"; };
+		20BA78CF23803D7700356FF5 /* NTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTBaseViewController.swift; sourceTree = "<group>"; };
+		20BA78D6238044A400356FF5 /* NTCircleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTCircleVC.swift; sourceTree = "<group>"; };
+		20BA78D8238044B600356FF5 /* NTUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTUserVC.swift; sourceTree = "<group>"; };
+		20BA78DB2380466A00356FF5 /* NTGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTGlobal.swift; sourceTree = "<group>"; };
+		20BA78DF2380486100356FF5 /* NTHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTHomeVC.swift; sourceTree = "<group>"; };
+		20BA78E12380488D00356FF5 /* NTHomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTHomeListCell.swift; sourceTree = "<group>"; };
 		20F2DF34237FFDA100AD8558 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F2DF37237FFDA100AD8558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F2DF39237FFDA100AD8558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +109,121 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		20BA78BC2380340500356FF5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78C423803B9800356FF5 /* ToolsTest.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		20BA78BD2380399100356FF5 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				20F2DF37237FFDA100AD8558 /* AppDelegate.swift */,
+				20F2DF39237FFDA100AD8558 /* ViewController.swift */,
+				20F2DF3B237FFDA100AD8558 /* Main.storyboard */,
+				20F2DF3E237FFDA200AD8558 /* Assets.xcassets */,
+				20F2DF40237FFDA200AD8558 /* LaunchScreen.storyboard */,
+				20F2DF43237FFDA200AD8558 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		20BA78BE23803AF300356FF5 /* Classess */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78D32380447100356FF5 /* User */,
+				20BA78D22380446500356FF5 /* Circle */,
+				20BA78D12380445F00356FF5 /* Home */,
+			);
+			path = Classess;
+			sourceTree = "<group>";
+		};
+		20BA78BF23803AFD00356FF5 /* Librarys */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78C023803B5F00356FF5 /* LibraryTest.swift */,
+			);
+			path = Librarys;
+			sourceTree = "<group>";
+		};
+		20BA78C623803BC100356FF5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78CB23803C4200356FF5 /* NTModulesTest.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		20BA78C723803BD900356FF5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78DA2380463B00356FF5 /* Global */,
+				20BA78C823803BE000356FF5 /* Base */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		20BA78C823803BE000356FF5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78C923803C1500356FF5 /* NTBaseTabBarController.swift */,
+				20BA78CD23803D5500356FF5 /* NTBaseNavigationController.swift */,
+				20BA78CF23803D7700356FF5 /* NTBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		20BA78D12380445F00356FF5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78DD2380483300356FF5 /* View */,
+				20BA78DE2380483900356FF5 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20BA78D22380446500356FF5 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78D6238044A400356FF5 /* NTCircleVC.swift */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		20BA78D32380447100356FF5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78D8238044B600356FF5 /* NTUserVC.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		20BA78DA2380463B00356FF5 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78DB2380466A00356FF5 /* NTGlobal.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		20BA78DD2380483300356FF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78E12380488D00356FF5 /* NTHomeListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20BA78DE2380483900356FF5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20BA78DF2380486100356FF5 /* NTHomeVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		20F2DF2B237FFDA100AD8558 = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +249,12 @@
 		20F2DF36237FFDA100AD8558 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				20F2DF37237FFDA100AD8558 /* AppDelegate.swift */,
-				20F2DF39237FFDA100AD8558 /* ViewController.swift */,
-				20F2DF3B237FFDA100AD8558 /* Main.storyboard */,
-				20F2DF3E237FFDA200AD8558 /* Assets.xcassets */,
-				20F2DF40237FFDA200AD8558 /* LaunchScreen.storyboard */,
-				20F2DF43237FFDA200AD8558 /* Info.plist */,
+				20BA78C723803BD900356FF5 /* Main */,
+				20BA78C623803BC100356FF5 /* Modules */,
+				20BA78BF23803AFD00356FF5 /* Librarys */,
+				20BA78BE23803AF300356FF5 /* Classess */,
+				20BA78BC2380340500356FF5 /* Tools */,
+				20BA78BD2380399100356FF5 /* Others */,
 			);
 			path = WeChat;
 			sourceTree = "<group>";
@@ -213,6 +350,7 @@
 		20F2DF2C237FFDA100AD8558 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NT;
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = WeChat;
@@ -320,6 +458,8 @@
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -336,6 +476,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,8 +491,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20BA78DC2380466A00356FF5 /* NTGlobal.swift in Sources */,
+				20BA78D023803D7700356FF5 /* NTBaseViewController.swift in Sources */,
+				20BA78CE23803D5500356FF5 /* NTBaseNavigationController.swift in Sources */,
 				20F2DF3A237FFDA100AD8558 /* ViewController.swift in Sources */,
+				20BA78D9238044B600356FF5 /* NTUserVC.swift in Sources */,
 				20F2DF38237FFDA100AD8558 /* AppDelegate.swift in Sources */,
+				20BA78CC23803C4200356FF5 /* NTModulesTest.swift in Sources */,
+				20BA78CA23803C1500356FF5 /* NTBaseTabBarController.swift in Sources */,
+				20BA78E22380488D00356FF5 /* NTHomeListCell.swift in Sources */,
+				20BA78D7238044A400356FF5 /* NTCircleVC.swift in Sources */,
+				20BA78E02380486100356FF5 /* NTHomeVC.swift in Sources */,
+				20BA78C123803B5F00356FF5 /* LibraryTest.swift in Sources */,
+				20BA78C523803B9800356FF5 /* ToolsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

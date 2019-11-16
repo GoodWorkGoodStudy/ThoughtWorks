@@ -16,4 +16,7 @@ target 'WeChat' do
   pod 'Moya', '~> 13.0.0'
   pod 'SnapKit', '~> 5.0.1'
   
+  pod 'YYText', '~> 1.0.7'
+  pod 'YYCategories', '~> 1.0.4'
+  
 end
