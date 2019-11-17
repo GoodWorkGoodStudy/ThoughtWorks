@@ -9,56 +9,16 @@
 import UIKit
 import SnapKit
 
-class NTHomeVC: NTBaseViewController,UITableViewDelegate,UITableViewDataSource {
+class NTHomeVC: NTBaseViewController {
 
     
     var listView: UITableView!
     
-    //MARK: - ♻️life cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         setupUI();
-        
     }
-    
-    //MARK: - 🔄overwrite
-    
-    //MARK: - 🚪public
-    
-    //MARK: - 🍐delegate
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20;
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NTHomeListCell.className(), for: indexPath);
-        return cell;
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120*kScaleX;
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true);
-        
-    }
-    
-    //MARK: - ☎️notification
-    
-    //MARK: - 🎬event response
-    
-    //MARK: - 🔒private
-    
-    //MARK: - 🌲setupUI
     
     func setupUI(){
         
@@ -78,7 +38,38 @@ class NTHomeVC: NTBaseViewController,UITableViewDelegate,UITableViewDataSource {
             make.edges.equalTo(self.view);
         }
     }
-    
-    //MARK: - ☸getter and setter
 
 }
+
+extension NTHomeVC: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120*kScaleX;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true);
+        
+    }
+}
+
+extension NTHomeVC: UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: NTHomeListCell.className(), for: indexPath);
+        return cell;
+    }
+    
+}
+
+
+
+
