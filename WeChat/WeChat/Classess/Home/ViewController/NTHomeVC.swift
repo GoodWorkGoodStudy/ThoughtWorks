@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import Moya
+import HandyJSON
 
 class NTHomeVC: NTBaseViewController {
 
@@ -18,7 +20,45 @@ class NTHomeVC: NTBaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupUI();
+        requestData();
     }
+    
+    
+    func requestData(){
+        NTNetworkProvider.request(.getUserInfomation) { (result) in
+            switch result{
+            case let .success(response):
+                print(response);
+                do{
+                    let jsonString = try response.mapString();
+                    if let userModel = NTUserModel.deserialize(from: jsonString){
+                        print(userModel);
+                    }
+                }catch{
+                }
+            case let .failure(error):
+                print(error);
+            }
+        }
+        
+        
+        NTNetworkProvider.request(.getUserTweets) { (result) in
+            switch result{
+            case let .success(response):
+                print(response);
+                do{
+                    let jsonString = try response.mapString();
+                    print(jsonString);
+                }catch{
+                }
+            case let .failure(error):
+                print(error);
+            }
+        }
+        
+        
+    }
+    
     
     func setupUI(){
         
