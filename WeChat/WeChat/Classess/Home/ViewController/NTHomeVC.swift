@@ -48,7 +48,11 @@ class NTHomeVC: NTBaseViewController {
                 print(response);
                 do{
                     let jsonString = try response.mapString();
-                    print(jsonString);
+                    if let commentModels = [NTCommentModel].deserialize(from: jsonString) {
+                        print(commentModels[4]?.images?.first?.url ?? "");
+                        print(commentModels.first??.sender?.nick ?? "");
+                        print(commentModels.first??.comments?.first?.sender?.nick ?? "");
+                    }
                 }catch{
                 }
             case let .failure(error):
