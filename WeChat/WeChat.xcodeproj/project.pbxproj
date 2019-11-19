@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2087F8C92381413800897184 /* NTUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2087F8C82381413800897184 /* NTUserModel.swift */; };
 		20A27232238241C70040AB89 /* NTCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A27231238241C70040AB89 /* NTCommentModel.swift */; };
+		20B449CA2383D615002F13AB /* NTImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B449C92383D615002F13AB /* NTImageListView.swift */; };
 		20BA78C123803B5F00356FF5 /* LibraryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78C023803B5F00356FF5 /* LibraryTest.swift */; };
 		20BA78C523803B9800356FF5 /* ToolsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78C423803B9800356FF5 /* ToolsTest.swift */; };
 		20BA78CA23803C1500356FF5 /* NTBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA78C923803C1500356FF5 /* NTBaseTabBarController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		2087F8C82381413800897184 /* NTUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTUserModel.swift; sourceTree = "<group>"; };
 		20A27231238241C70040AB89 /* NTCommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTCommentModel.swift; sourceTree = "<group>"; };
+		20B449C92383D615002F13AB /* NTImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTImageListView.swift; sourceTree = "<group>"; };
 		20BA78C023803B5F00356FF5 /* LibraryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTest.swift; sourceTree = "<group>"; };
 		20BA78C423803B9800356FF5 /* ToolsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsTest.swift; sourceTree = "<group>"; };
 		20BA78C923803C1500356FF5 /* NTBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				20BA78E12380488D00356FF5 /* NTHomeListCell.swift */,
+				20B449C92383D615002F13AB /* NTImageListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				20BA78E22380488D00356FF5 /* NTHomeListCell.swift in Sources */,
 				20BA78D7238044A400356FF5 /* NTCircleVC.swift in Sources */,
 				20BA78E02380486100356FF5 /* NTHomeVC.swift in Sources */,
+				20B449CA2383D615002F13AB /* NTImageListView.swift in Sources */,
 				20BA78C123803B5F00356FF5 /* LibraryTest.swift in Sources */,
 				20BA78C523803B9800356FF5 /* ToolsTest.swift in Sources */,
 			);

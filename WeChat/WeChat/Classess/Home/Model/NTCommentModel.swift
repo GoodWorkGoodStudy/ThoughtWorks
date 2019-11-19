@@ -17,6 +17,8 @@ class NTCommentModel: HandyJSON {
     var sender: SenderModel?
     var comments: [CommentsModel]?
     
+    // cell高度
+    var rowHeight: CGFloat?
 
     required init() {}
 }

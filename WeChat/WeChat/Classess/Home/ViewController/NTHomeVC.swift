@@ -53,7 +53,13 @@ class NTHomeVC: NTBaseViewController {
                 do{
                     let jsonString = try response.mapString();
                     if let commentModels = [NTCommentModel].deserialize(from: jsonString) {
-                        self.listArray = NSMutableArray.init(array: commentModels as [Any]);
+                        let tempArray = NSMutableArray.init(array: commentModels as [Any]);
+                        for item in tempArray{
+                            let commentModel = item as! NTCommentModel;
+                            if commentModel.content != nil || commentModel.images?.count ?? 0 > 0{
+                                self.listArray.add(commentModel);
+                            }
+                        }
                         self.listView.reloadData();
                     }
                 }catch{
@@ -81,7 +87,9 @@ class NTHomeVC: NTBaseViewController {
         
         
         listView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view);
+            make.left.right.equalTo(self.view);
+            make.top.equalTo(self.view).offset(kNavigationBarHeight);
+            make.bottom.equalTo(self.view).offset(-kTabbarHeight);
         }
     }
 
@@ -90,7 +98,8 @@ class NTHomeVC: NTBaseViewController {
 extension NTHomeVC: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120*kScaleX;
+        let commentModel = self.listArray[indexPath.row] as! NTCommentModel;
+        return commentModel.rowHeight ?? 0.00;
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
