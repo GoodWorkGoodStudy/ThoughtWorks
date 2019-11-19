@@ -11,17 +11,10 @@ import SnapKit
 
 class NTHomeListCell: UITableViewCell {
 
-    //MARK: - ♻️life cycle
     var iconImageView: UIImageView?
     var nameLabel: UILabel?
-    var priceLabel: UILabel?
-    var shopLabel: UILabel?
-    var volumeLabel: UILabel?
-    var originalPriceLabel: UILabel?
-    var profitLabel: UILabel? //赚多少
-    var couponLabel: UILabel? //优惠券是多少
     
-    //MARK: - 🔄overwrite
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier);
         selectionStyle = .none;
@@ -31,17 +24,17 @@ class NTHomeListCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented");
     }
-    //MARK: - 🚪public
     
-    //MARK: - 🍐delegate
     
-    //MARK: - ☎️notification
     
-    //MARK: - 🎬event response
+    // 填充数据
+    public func fillCellWithCommentModel(commentModel: NTCommentModel){
+        print(commentModel.content ?? "");
+    }
     
-    //MARK: - 🔒private
     
-    //MARK: - 🌲setupUI
+    
+
     func setupUI(){
         
         iconImageView = UIImageView();
@@ -89,6 +82,8 @@ class NTHomeListCell: UITableViewCell {
         
     }
     
-    //MARK: - ☸getter and setter
+    
+    
+    
 
 }

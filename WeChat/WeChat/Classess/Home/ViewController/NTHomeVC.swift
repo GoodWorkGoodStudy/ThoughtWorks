@@ -13,33 +13,37 @@ import HandyJSON
 
 class NTHomeVC: NTBaseViewController {
 
-    
     var listView: UITableView!
+    var listArray: NSMutableArray!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.listArray = NSMutableArray.init();
+        
         setupUI();
         requestData();
     }
     
     
     func requestData(){
-        NTNetworkProvider.request(.getUserInfomation) { (result) in
-            switch result{
-            case let .success(response):
-                print(response);
-                do{
-                    let jsonString = try response.mapString();
-                    if let userModel = NTUserModel.deserialize(from: jsonString){
-                        print(userModel);
-                    }
-                }catch{
-                }
-            case let .failure(error):
-                print(error);
-            }
-        }
+//        NTNetworkProvider.request(.getUserInfomation) { (result) in
+//            switch result{
+//            case let .success(response):
+//                print(response);
+//                do{
+//                    let jsonString = try response.mapString();
+//                    if let userModel = NTUserModel.deserialize(from: jsonString){
+//                        print(userModel);
+//                    }
+//                }catch{
+//                }
+//            case let .failure(error):
+//                print(error);
+//            }
+//        }
         
         
         NTNetworkProvider.request(.getUserTweets) { (result) in
@@ -49,9 +53,8 @@ class NTHomeVC: NTBaseViewController {
                 do{
                     let jsonString = try response.mapString();
                     if let commentModels = [NTCommentModel].deserialize(from: jsonString) {
-                        print(commentModels[4]?.images?.first?.url ?? "");
-                        print(commentModels.first??.sender?.nick ?? "");
-                        print(commentModels.first??.comments?.first?.sender?.nick ?? "");
+                        self.listArray = NSMutableArray.init(array: commentModels as [Any]);
+                        self.listView.reloadData();
                     }
                 }catch{
                 }
@@ -59,7 +62,6 @@ class NTHomeVC: NTBaseViewController {
                 print(error);
             }
         }
-        
         
     }
     
@@ -104,11 +106,12 @@ extension NTHomeVC: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20;
+        return self.listArray.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NTHomeListCell.className(), for: indexPath);
+        let cell = tableView.dequeueReusableCell(withIdentifier: NTHomeListCell.className(), for: indexPath) as! NTHomeListCell;
+        cell.fillCellWithCommentModel(commentModel: self.listArray?[indexPath.row] as! NTCommentModel);
         return cell;
     }
     
